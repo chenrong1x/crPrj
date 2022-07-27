@@ -1,0 +1,15 @@
+<!-- helloForEach.html -->
+<template>
+        <ul class="slds-m-around_medium">
+            <template for:each={orgs} for:item="org">
+                <lightning-card title={org.Name} icon-name="custom:custom14" key={org.Id}>
+                    <a>
+                        {org.Name}
+                    </a>
+                    <div>
+                        {org.Domain__c}
+                    </div>
+                </lightning-card>
+            </template>
+        </ul>
+</template>
